@@ -15,6 +15,6 @@ module.exports = {
   ogLanguage: 'en_US', // Facebook Language
 
   // Manifest and Progress color
-  themeColor: '#b710a1',
+  themeColor: '#42B44E',
   backgroundColor: '#350d27',
 };

@@ -12,7 +12,6 @@ import MayTheForce from '../images/may_the_force.svg';
 
 const Header = styled.header`
   width: 100%;
-  height: 900px;
   position: relative;
   padding: 1.75rem;
   @media (max-width: ${props => props.theme.breakpoint.s}) {
@@ -20,14 +19,15 @@ const Header = styled.header`
   }
 `;
 
+const Strap = styled.h3`
+  color: ${props => props.theme.colors.text};
+  padding: 0 1.75rem;
+`;
+
 const Logo = styled.h2`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
   padding: 0 1.75rem;
   margin-top: 50px;
+  margin-bottom:5px;
 `;
 
 const Hero = styled(Flex)`
@@ -138,6 +138,11 @@ const Contact = styled(Wrapper)`
   }
 `;
 
+
+const Skills = styled.div`
+  padding: 0 1.75rem;
+`;
+
 const IndexPage = ({
   data: {
     caseStudies: { edges },
@@ -145,14 +150,18 @@ const IndexPage = ({
 }) => (
   <Layout>
     <Header>
-      <Logo>Bella Inc.</Logo>
-      <Hero justifyContent="center" alignItems="center" flexDirection="column">
+      <Logo>Iain Durie</Logo>
+      <Strap>UX Engineer</Strap>
+      {/* <Hero justifyContent="center" alignItems="center" flexDirection="column">
         <h1>
-          We design and develop <br /> noice web applications.
+          I design and develop applications.
         </h1>
         <h3>Hi, Bella Inc., the human form of the 💯 Emoji.</h3>
-      </Hero>
+        
+      </Hero> */}
     </Header>
+
+
     <Wrapper p={4} mb={[4, 4, 7]} mx="auto" justifyContent="space-between" flexWrap="wrap">
       {edges.map(c => (
         <GridItem
@@ -165,7 +174,7 @@ const IndexPage = ({
         />
       ))}
     </Wrapper>
-    <PrimaryBG>
+    {/* <PrimaryBG>
       <Wrapper flexDirection="column" p={4} mx="auto">
         <Flex w={1} py={5} justifyContent="space-between" flexWrap="wrap">
           <ServiceImage>
@@ -222,12 +231,12 @@ const IndexPage = ({
           </ServiceText>
         </Flex>
       </Wrapper>
-    </PrimaryBG>
+    </PrimaryBG> */}
     <Contact px={4} py={6} justifyContent="center" alignItems="center" flexDirection="column">
       <h1>Say hi!</h1>
-      <h3>contact@domain.com</h3>
+      <h3>iaindurie@gmail.com</h3>
     </Contact>
-    <Footer />
+    {/* <Footer /> */}
   </Layout>
 );
 

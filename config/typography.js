@@ -1,11 +1,11 @@
 import Typography from 'typography';
 
 const typography = new Typography({
-  title: 'Gatsby Starter Portfolio Bella',
+  title: 'Iain Durie',
   baseFontSize: '18px',
   baseLineHeight: 1.45,
   headerFontFamily: [
-    'Bree Serif',
+    'Nunito Sans',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -18,7 +18,7 @@ const typography = new Typography({
     'Segoe UI Symbol',
   ],
   bodyFontFamily: [
-    'Open Sans',
+    'Nunito Sans',
     '-apple-system',
     'BlinkMacSystemFont',
     'Segoe UI',
@@ -42,6 +42,7 @@ const typography = new Typography({
   ],
   scaleRatio: 3.998,
   headerWeight: 700,
+  bodyWeight: 300,
   overrideStyles: () => ({
     img: {
       marginBottom: 0,
